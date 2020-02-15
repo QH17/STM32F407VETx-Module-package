@@ -1,0 +1,20 @@
+--cpu=Cortex-M4.fp
+"..\output\stm32f4xx_it.o"
+"..\output\main.o"
+"..\output\system_stm32f4xx.o"
+"..\output\delay.o"
+"..\output\sys.o"
+"..\output\usart.o"
+"..\output\startup_stm32f40_41xxx.o"
+"..\output\misc.o"
+"..\output\stm32f4xx_gpio.o"
+"..\output\stm32f4xx_rcc.o"
+"..\output\stm32f4xx_usart.o"
+"..\output\stm32f4xx_fsmc.o"
+"..\output\stm32f4xx_iwdg.o"
+"..\output\iwdg.o"
+"..\DSP\arm_cortexM4lf_math.lib"
+--strict --scatter "..\OUTPUT\TEMP.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\TEMP.map" -o ..\OUTPUT\TEMP.axf
